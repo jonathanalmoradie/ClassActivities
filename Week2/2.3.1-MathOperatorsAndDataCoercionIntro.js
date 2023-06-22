@@ -25,3 +25,5 @@ console.log(true + true + "true" + "false");
 // 2truefalse
 console.log(1 + 1 + "2" + "3");
 // 223
+
+console.log(2 + false);
