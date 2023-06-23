@@ -8,9 +8,8 @@
 // while (x <= 100) {
 //   currentTotal += x;
 //   x++;
+//   console.log(currentTotal);
 // }
-// console.log(currentTotal);
-
 
 // Now using the same variables you created in steps 1 and 2, create a **for** loops that TOTALS the numbers from 1 to 100
 
@@ -18,5 +17,5 @@
 let currentTotal = 0;
 for (let x = 1; x <= 100; x++) {
   currentTotal += x;
-  console.log(currentTotal)
+  console.log(currentTotal);
 }
