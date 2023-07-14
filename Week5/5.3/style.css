@@ -1,0 +1,89 @@
+/*
+	Several CSS sections will be added from activity 5
+*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Merriweather', serif; */
+}
+
+header {
+  background-image: url(https://source.unsplash.com/random/800x600);
+  background-size: cover;
+  height: 100vh;
+}
+
+header > button {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+header > h1 {
+  color: darkblue;
+}
+
+body > form {
+	margin: 2em;
+}
+
+/*  This styling sets up the flex container */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+/* this adds a border around the flex items */
+.flex > * {
+  border: 1px solid;
+}
+
+
+
+/* Activity 5.1: Media queries
+  -Add CSS that removes the border around the flex items */
+  @media print {
+    .flex > * {
+      border: none;
+    }
+  }
+
+/* Activity 5.2: Media queries
+  -Add CSS for when screen size is less than 700px */
+@media (max-width: 700px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+/* Activity 5.3: Media queries
+  -Add CSS that checks for device hover capabilities */
+@media (hover: hover) {
+  * :hover {
+    color: red
+  }
+}
+
+
+
+@media (min-width: 2000px) {
+  * {
+    color:orange;
+  }
+}
+
+/* navbar / hamburger */
+@media (min-width: 550px) {
+  nav > .fa-bars-staggered {
+    display: none;
+  }
+}
+
+@media (max-width: 549px) {
+  .hidden--mobile {
+    display: none;
+  }
+}
